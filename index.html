@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Iphone landing page</title>
+<style>
+
+
+#header{
+  text-align: center;
+}
+li {
+  display: inline;
+  padding-left:40px;
+  
+}
+
+#nav1{
+  padding-right:75px;
+  
+}
+#iphone-11{
+  padding-left:10px;
+}
+
+
+body{
+  text-align:center;
+  margin-top: 50px; /* Add a top margin to avoid content overlay */
+}
+
+
+.features-1{
+  display:flex;
+  justify-content:center;
+   
+  width:80%;
+  padding-left:120px;
+}
+
+.price-1{
+   display:flex;
+  justify-content:center;
+   
+  width:80%;
+  padding-left:120px;
+  }
+.features-1 div, .price-1 div{
+  color:#201A19;
+  background-color:#C5BCBA;
+    border:1px #ccc solid;
+ width:33%;
+  
+  }
+
+@media(max-width:768px){
+  .features-1 div, .price-1 div{
+  
+    border:1px #ccc solid;
+ width:100%;
+  
+  }
+}
+
+@media(max-width:768px){
+  .features-1{
+    display:flex;
+     flex-direction:column;
+    width:100%;
+    margin-left:-125px;
+   
+     }
+  
+  .price-1{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    margin-left:-125px;
+     }
+}
+
+.footer ul{
+    padding-right:100px;
+  }
+
+@media(max-width:768px){
+  .footer ul{
+    text-align:center;
+  }
+}
+
+
+nav {
+  overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+@media(max-width:768px){
+  #video{
+    height:300px;
+    width:300px;
+  }
+}
+</style>
+</head>
+<body>
+  
+<header id="header">
+  <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="apple logo" width=50px height=50px>
+      <h1 id="iphone-11">IPHONE 11</h1></div>
+  <nav id="nav-bar">
+  <ul id="nav1">
+    <li><a class="nav-link" href="#features">Features</a></li>
+    <li ><a class="nav-link" href="#demo">Demo</a></li>
+    <li ><a class="nav-link" href="#pricing">Pricing</a></li>
+    
+  </ul>
+    </nav>  
+  </header>
+  
+  
+    <div>
+    <img src="https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-11/Black/Apple-iPhone-11-Black-frontimage.jpg" width=300px height=500px
+         </div>
+      
+      <p><h1>Features</h1></p>
+      <section id="features" class="features-1" >
+    <div class="column">
+      Dual 12MP Ultra wide with Night mode
+      <br>
+       10 Hours talk time
+      <br>
+        2.5 Days standby time
+      <br>
+      1792 x 828 pixels
+  </div>
+    <div class="column">Bluetooth 5.0
+      <br>
+  Face ID for Secure Authentication and Apple Pay
+  <br>
+  Wireless Charging
+        <br>
+      Non-removable Li-Ion 3110 mAh battery (11.91 Wh)
+        </div>
+    <div class="column">Fast-Charge Capable
+      <br>
+  Faster Wi-Fi
+      <br>
+  Gigabit-Class LTE <br>
+  
+  Dual SIM with eSIM</div>
+  </section>
+       <p><h1>Hands on Demo</h1></p>
+      <section id="demo">
+       
+        <iframe id="video" height=500 width=500 src="https://www.youtube.com/embed/eokq37kuhXA"></iframe>
+      </section>
+  
+      <p><h1 id="pricing-2">Pricing</h1></p>
+      <section id="pricing" class="price-1" >
+        
+        <div class="column" ><h1>64GB</h1>
+        <p>  FINANCE FROM<br>
+  $29.17/mo.
+  for 24 mos.
+  $0.00
+  down + tax<br>
+  Full price: 
+          $699.99</p>
+        </div>
+        <div class="column"><h1>128GB</h1>
+          <p>FINANCE FROM<br>
+  $29.17/mo.
+  for 24 mos.
+  $49.99
+  down + tax<br>
+  Full price: 
+  $749.99</p>
+        </div>
+        <div class="column"><h1>256GB</h1>
+          <p>FINANCE FROM <br>
+  $29.17/mo.
+  for 24 mos.
+  $149.99
+  down + tax<br>
+  Full price: 
+  $849.99
+  </p>
+        </div>
+      </section>
+     <section class="container">
+       <form id="form" action="https://www.freecodecamp.com/email-submit">
+         <h1>Pre-order
+       </h1>
+         <input name="email" type="email" id="email" placeholder="please enter your email">
+         
+         <input id="submit" type="submit">
+       </form>
+      </section>
+  
+  <section >
+    <footer class="footer">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2019, Apple Inc.</span>
+      </footer>
+    </section>
+</body>
+</html>
